@@ -1,0 +1,92 @@
+.btn {
+  height: 50px;
+  width: 200px;
+  background: transparent;
+  border: none;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.content {
+  width: 100%;
+  color: #fff;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.upper-line {
+  height: 1px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.lower-line {
+  height: 1px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.upper-line-animation {
+  height: 1px;
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: -200px;
+  transition: all 0.3s ease;
+  transition-delay: 0.3s;
+}
+
+.lower-line-animation {
+  height: 1px;
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  right: -200px;
+  transition: all 0.3s ease;
+  transition-delay: 0.3s;
+}
+
+.content-animation {
+  position: absolute;
+  height: 48px;
+  width: 200px;
+  background-color: #fff;
+  top: 50px;
+  transition: all 0.3s ease;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.btn:hover .upper-line-animation {
+  transition-delay: 0s;
+  left: 0;
+}
+
+.btn:hover .lower-line-animation {
+  transition-delay: 0s;
+
+  right: 0;
+}
+
+.btn:hover .content-animation {
+  transition-delay: 0.3s;
+  top: 1px;
+}
+
+.btn:hover .content {
+  transition-delay: 0.3s;
+  transform: translateY(-49px);
+}

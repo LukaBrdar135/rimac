@@ -1,0 +1,54 @@
+.pagebox {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.pagebox__outer {
+  position: relative;
+  transition: all 0.3s ease-out;
+  transform: perspective(2000px) rotateX(0deg) rotateY(0deg);
+  transform-style: preserve-3d;
+}
+
+.pagebox__inner {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-position: center center;
+  background-size: cover;
+  transition: all 0.5s ease-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagebox__inner:nth-child(1) {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./assets/img1.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.pagebox__inner:nth-child(2) {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./assets/img2.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+.pagebox__inner:nth-child(3) {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./assets/img3.png");
+  background-position: center center;
+  background-size: cover;
+}
+.pagebox__inner:nth-child(4) {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./assets/img4.jpg");
+  background-position: center center;
+  background-size: cover;
+}
